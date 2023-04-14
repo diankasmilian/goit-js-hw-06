@@ -24,10 +24,10 @@ const divEl = document.createElement('div');
 divEl.style.width = `${size}px`;
 divEl.style.height = `${size}px`;
 divEl.style.backgroundColor = getRandomHexColor();
-fragment.append(divEl);
+divBox.append(divEl)
 size += 10;
   };
-  return divBox.append(fragment);
+  
 }
 
 btnDestroy.addEventListener('click', destroyBoxes);
